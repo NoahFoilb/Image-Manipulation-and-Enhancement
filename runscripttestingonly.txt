@@ -1,0 +1,2 @@
+load res/test-files/CustomPixels.png CustomPixels
+save res/test-files/Test-CustomPixels2.png CustomPixels

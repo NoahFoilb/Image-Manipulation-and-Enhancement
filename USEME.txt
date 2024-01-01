@@ -1,0 +1,93 @@
+PDP Image Manipulator
+
+Overview
+The PDP Image Manipulator is a graphical user interface (GUI) application designed for easy and
+intuitive image processing. It allows users to perform various transformations on images and
+visualizes pixel frequencies across the RGB color channels.
+
+JAR file commands:
+To run the jar file from the command line:
+1. To open the GUI
+        java -jar Assignment6.jar
+2.To run our script:
+        java -jar Assignment6.jar -file UsemeAllfeaturesscript.txt
+3. To run interactive mode:
+        java -jar Assignment6.jar -text
+
+Features
+
+Image Loading
+- Load Button: Users can load images into the application for editing by clicking the 'Load' button. The path of the loaded image is displayed next to the button.
+
+Image Saving
+- Save Button: Processed images can be saved back to the system. Upon saving, the file path of the saved image will be displayed for user reference.
+
+Preview Mode
+- Split View Slider: This feature provides a split-view slider that allows users to preview image transformations in real-time, comparing the original and edited images side by side.
+
+Color Channel Visualization
+- RGB Checkbox: Users can visualize the frequency of pixels for Red, Green, and Blue channels separately. This helps in analyzing the color composition of the image.
+
+Transformation Buttons
+The application offers a range of image transformations which include:
+- Horizontal Flip: Flips the image horizontally.
+- Vertical Flip: Flips the image vertically.
+- Blur: Applies a blur effect to the image.
+- Sharpen: Sharpens the image details.
+- Greyscale: Converts the image to luma component.
+- Sepia: Applies a sepia tone for a vintage look.
+- Color Correct: Allows for color correction adjustments.
+- Compress: Reduces the image file size.
+- Level Adjust: Adjusts the levels of shadows, midtones, and highlights.
+
+Pixel Frequencies
+- Histogram: The application generates a histogram that displays the distribution of pixel intensities across the RGB channels. This is useful for understanding the image's exposure and color balance.
+
+Undo Functionality
+- Undo: Users can revert to the previous state of the image before the last transformation was applied.
+
+USAGE
+To use the PDP Image Manipulator GUI, follow these steps:
+1. Click 'Load' to open an image.
+2. Select the desired image transformations.
+3. Use the Preview Mode slider to view changes in real-time.
+4. Check or uncheck the RGB channels to visualize pixel frequencies.
+5. Click 'Save' to download the edited image.
+
+
+
+Commands supported by text and file modes:
+
+
+COMMAND			USAGE
+---------------------------------------------------------------------------------------------------
+Load: 			load image-path image-name
+Run: 			run script-file
+
+
+Once loaded we can run any of the scripts
+
+
+
+COMMAND			USAGE
+---------------------------------------------------------------------------------------------------
+Save: 			save image-path image-name
+Component: 		X-component image-name dest-image-name
+					X is red, green, blue, value, luma, or intensity
+Flip: 			X-flip image-name dest-image-name
+					X is either horizontal or vertical
+Brighten: 		brighten increment image-name dest-image-name
+Rgb-split: 		rgb-split image-name dest-image-name-red dest-image-name-green dest-image-name-blue
+Rgb-combine: 		rgb-combine image-name red-image green-image blue-image
+Blur: 			blur image-name dest-image-name
+Sharpen: 		sharpen image-name dest-image-name
+Sepia: 			sepia image-name dest-image-name
+Compress: 		compress percentage image-name dest-image-name
+Color-Correct: 		color-correct image-name dest-image-name
+Level-Adjust: 		level-adjust b m w image-name dest-image-name
+
+
+Additional commands to add to the end of blur, sharpen, sepia, luma-component, color-correction, level-adjust commands
+Splice:			splice percentage
+
+Thank you for using out PDP Image Manipulator tool!
